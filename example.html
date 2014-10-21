@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Example - hi.js - (h)tml (i)ncludes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.4;
+      color: #333;
+      background-color: #fff;
+      margin: 1em;
+    }
+
+    .includes {
+      color: limegreen;
+      border: 2px dotted;
+      padding: .5em;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>hi.js - (h)tml (i)ncludes</h1>
+
+<h2>Example</h2>
+
+<div data-hi-href="includes/header.html"></div>
+
+<p>some content</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at inventore, minima nihil qui recusandae repellat soluta tempora ut vel! Adipisci aliquid
+  architecto commodi corporis ducimus explicabo harum incidunt laudantium minima, nemo officia quaerat quam quas, recusandae tempora vel voluptate! Architecto cupiditate
+  dolores expedita itaque iusto magnam quos ullam voluptate?</p>
+
+<div data-hi-href="includes/content.html"></div>
+
+<div data-hi-href="includes/this-html-file-does-not-exist.html"></div>
+
+<p>some more content</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at inventore, minima nihil qui recusandae repellat soluta tempora ut vel! Adipisci aliquid
+  architecto commodi corporis ducimus explicabo harum incidunt laudantium minima, nemo officia quaerat quam quas, recusandae tempora vel voluptate! Architecto cupiditate
+  dolores expedita itaque iusto magnam quos ullam voluptate?</p>
+
+<div data-hi-href="includes/footer.html"></div>
+
+<script async src="hi.js"></script>
+
+</body>
+</html>
