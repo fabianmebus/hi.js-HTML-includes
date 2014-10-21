@@ -22,6 +22,8 @@ Now you are ready to include other HTML documents. Just use the HTML attribute `
 to reference the HTML file you want to include. Place this `<div data-hi-href="path/to/your/includes/file-to-be-included.html"></div>`
 in you HTML wherever you want to include *the other* HTML.
 
+**[Demo page](http://fabianmebus.github.io/hi.js-HTML-includes/example.html)**
+
 Example:
 
 **index.html**
@@ -80,8 +82,6 @@ Example:
   </body>
 </html>
 ```
-
-**[Demo page](https://github.com/fabianmebus/...)** 
 
 ## Supported Browsers
 
