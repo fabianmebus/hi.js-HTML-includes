@@ -6,7 +6,7 @@ to provide an *include* functionality in HTML. Basically, you will be able to in
 ## When to use it and when NOT to
 
 From my point of view **hi.js** is a fast and easy way to get an *include* functionality in HTML. 
-Because of the [browser support](#supported-browsers) (at the moment) and front end performance concerns, for me, it is more a 
+Because of the [browser support](#supported-browsers) (at the moment) and front end performance concerns, for me it is more a 
 tool for prototyping than to use it in production. [*Static site generators*](http://staticsitegenerators.net) or *server side scripting* will be
 a better way to get a *include* functionality for your project in production.
 
@@ -20,7 +20,7 @@ First include the **hi.js** file somewhere in your HTML document, like this:
 
 Now you are ready to include other HTML documents. Just use the HTML attribute `data-hi-href` with, for instance, a `div` element 
 to reference the HTML file you want to include. Place this `<div data-hi-href="path/to/your/includes/file-to-be-included.html"></div>`
-in you HTML where ever you want to include *the other* HTML.
+in you HTML wherever you want to include *the other* HTML.
 
 Example:
 
@@ -57,17 +57,28 @@ Example:
 **Result**
 
 ```html
-...
-<body>
-  <h1>hi.js - (h)tml (i)ncludes</h1>  
-  <header>
-    <h1>This is my <em>included</em> header</h1>
-  </header> 
-  <p>some content</p>
-  <p>some more content</p>
-  <script async src="hi.js"></script>
-</body>
-...
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example - hi.js - (h)tml (i)ncludes</title>
+
+    <link rel="import" href="header.html">
+
+  </head>
+  <body>
+    <h1>hi.js - (h)tml (i)ncludes</h1>
+    
+    <header>
+      <h1>This is my <em>included</em> header</h1>
+    </header>
+    
+    <p>some content</p>
+    <p>some more content</p>
+    
+    <script async src="hi.js"></script>
+  </body>
+</html>
 ```
 
 **[Demo page](https://github.com/fabianmebus/...)** 
