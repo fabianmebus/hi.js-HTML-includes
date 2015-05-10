@@ -4,3 +4,7 @@
 to provide an *include* functionality in HTML. Basically, you will be able to include and reuse HTML documents in other HTML documents.
 
 [Here you have the documentation and a demo.](http://fabianmebus.com/hi-js-html-includes/)
+
+## License
+
+It's all yours under [MIT](https://github.com/fabianmebus/hi.js-HTML-includes/blob/master/LICENSE.md).
